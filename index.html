@@ -11,6 +11,7 @@
 <p id="three"></p>
 <p id="four"></p>
 <p id="five"></p>
+<p id="six"></p>
 
 <script>
 var x = toCelsius(77);
@@ -31,11 +32,18 @@ var mtc = str.lastIndexOf("locate");
 var mta = str.slice(7,21);
 var mtb = str.replace("Please", "SVP");
 var mtd = str.toLocaleUpperCase();
+var mte = str.split(" ");
+var text = " ";
+var i;
+for (i=0; i<mte.length; i++) {
+    text+= mte[i] + "<br>"
+}
 document.getElementById("one").innerHTML=mtd;
 document.getElementById("two").innerHTML=mtc;
 document.getElementById("three").innerHTML=mta;
 document.getElementById("four").innerHTML=mtb;
 document.getElementById("five").innerHTML=mtd;
+document.getElementById("six").innerHTML=text;
 
 </script>
 </body>
