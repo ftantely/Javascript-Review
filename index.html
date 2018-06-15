@@ -12,6 +12,10 @@
 <p id="four"></p>
 <p id="five"></p>
 <p id="six"></p>
+<p id="seven"></p>
+<p id="eight"></p>
+<p id="nine"></p>
+
 
 <script>
 var x = toCelsius(77);
@@ -33,6 +37,7 @@ var mta = str.slice(7,21);
 var mtb = str.replace("Please", "SVP");
 var mtd = str.toLocaleUpperCase();
 var mte = str.split(" ");
+var fruits = ["Banana", "Orange", "Apple", "Mango"]
 var text = " ";
 var i;
 for (i=0; i<mte.length; i++) {
@@ -44,6 +49,11 @@ document.getElementById("three").innerHTML=mta;
 document.getElementById("four").innerHTML=mtb;
 document.getElementById("five").innerHTML=mtd;
 document.getElementById("six").innerHTML=text;
+document.getElementById("seven").innerHTML=fruits.toString();
+document.getElementById("eight").innerHTML=fruits.join("*");
+document.getElementById("nine").innerHTML=fruits.pop("Orange");
+
+
 
 </script>
 </body>
